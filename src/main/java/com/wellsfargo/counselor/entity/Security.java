@@ -17,13 +17,13 @@ public class Security {
     private String category;
 
     @Column(nullable = false)
-    private int purchasePrice;
+    private float purchasePrice;
 
     @Column(nullable = false)
     private LocalDate purchaseDate;
 
     @Column(nullable = false)
-    private int quantity;
+    private float quantity;
 
     @ManyToOne
     @JoinColumn(name = "portfolioId", nullable = false)
